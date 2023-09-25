@@ -43,6 +43,8 @@ class RegistrationController extends GetxController {
             age: int.tryParse(age) ?? 0,
              firstName: firstName,
             lastName: lastName,
+          imageUrl: '',
+          notificationToken: '',
         );
 
          FirebaseAuth.instance.currentUser!.updateDisplayName(firstName);
